@@ -10,6 +10,36 @@ import java.util.Locale;
  * @create 2022-11-04  1:53 AM
  */
 public class StringMethodTest {
+
+    @Test
+    public void test3() {
+        String str1= "hello world";
+        boolean b1=str1.endsWith("ld");
+        boolean b2=str1.endsWith("0");
+        System.out.println(b1);
+        System.out.println(b2);
+
+        boolean b3 = str1.startsWith("h");
+        System.out.println(b3);
+
+        boolean b4 = str1.startsWith("ell",1);
+        System.out.println(b4);
+
+        String str2 = "world";
+        System.out.println(str1.contains(str2));
+
+        System.out.println(str1.indexOf(str2));
+        System.out.println(str1.indexOf("llo"));
+
+        System.out.println(str1.indexOf("lo",5));
+
+        String str3 = "hellorworld";
+        System.out.println(str3.lastIndexOf("or")); // search from the last character
+
+        System.out.println(str3.lastIndexOf("or",4));
+
+    }
+
     @Test
     public void test2() {
         String s1 = "hello world";
