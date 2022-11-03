@@ -8,6 +8,8 @@ package dev.ahmed.dev.ahmed.exer;
  * Conclusion:
  *      String is final so it can not be replaced ,
  *      char can be replaced
+ *
+ *
  */
 public class StringTest {
     String str = new String("good");
