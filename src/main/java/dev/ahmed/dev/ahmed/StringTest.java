@@ -3,6 +3,7 @@ package dev.ahmed.dev.ahmed;
 import jdk.jfr.StackTrace;
 import org.junit.Test;
 
+
 /**
  * @author Ahmed Bughra
  * @create 2022-10-29  1:15 PM
@@ -13,6 +14,20 @@ public class StringTest {
      *  1. sum of variable and variable will be on variable pool.
      *  2. Any of them are object, it will be on stack
      */
+
+    @Test
+    public void test33(){
+        String s1 = "javaEESpring";
+        String s2 = "javEE";
+        String s3 = s2 + "Spring";
+        System.out.println(s1==s3);
+
+        final String s4 = "javaEE";
+        String s5 = s4 + "Spring";
+        System.out.println(s1==s5);
+    }
+
+
     @Test
     public void testString3(){
         String s1 = "javaEE";

@@ -12,6 +12,45 @@ import java.util.Locale;
 public class StringMethodTest {
 
     @Test
+    public void test4(){
+        String s1 = "hello";
+        String s2 = s1.replace('h','y');
+        String s3 = s1.replace("he", "y");
+        System.out.println(s2);
+        System.out.println(s3);
+
+        System.out.println("***************");
+        String str = "12hello34world5java7891mysql456";
+        String string = str.replaceAll("\\d+",","); // "\\d+" means positive number
+        String stri1 = string.replaceAll("^,|,$" ,""); //"^,|,$" means suffix or prefix is ,
+
+        System.out.println(string);
+        System.out.println(stri1);
+
+        str = "12345";
+        boolean matches = str.matches("\\d+");
+        System.out.println(matches);
+        String tel = "0571-4534893";
+        boolean result = tel.matches("0571-\\d{7,8}");
+        System.out.println(result);
+
+        System.out.println("***************");
+        str = "hello|world|java";
+        String[] strs = str.split("\\|");
+        for (int i = 0; i < strs.length; i++) {
+            System.out.println(strs[i]);
+        }
+        System.out.println();
+        String str2 = "hello.world.java";
+        String[] strs2 = str2.split("\\.");
+        for (int i = 0; i < strs2.length; i++){
+            System.out.println(strs2[i]);
+        }
+
+
+    }
+
+    @Test
     public void test3() {
         String str1= "hello world";
         boolean b1=str1.endsWith("ld");
