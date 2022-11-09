@@ -68,6 +68,8 @@ public class StringBufferBuilder {
 
     @Test
     public void test2() {
+        // currentTimeMillis
+
         long startTime = 0L;
         long endTime = 0L;
         String text = "";
